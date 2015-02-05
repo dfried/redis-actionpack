@@ -21,6 +21,7 @@ module ActionDispatch
       def set_cookie(env, session_id, cookie)
         request = ActionDispatch::Request.new(env)
         request.cookie_jar[key] = cookie
+      end
     end
   end
 end
