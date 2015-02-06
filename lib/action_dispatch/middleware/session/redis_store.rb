@@ -7,7 +7,6 @@ module ActionDispatch
     class RedisStore < Rack::Session::Redis
       include Compatibility
       include StaleSessionCheck
-      include SessionObject
 
       def initialize(app, options = {})
         options = options.dup
